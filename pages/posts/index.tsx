@@ -33,6 +33,7 @@ export const getStaticProps = async () => {
     'category',
     'tags',
     'description',
+    'content',
   ]);
 
   return {

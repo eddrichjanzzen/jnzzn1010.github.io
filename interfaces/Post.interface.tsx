@@ -6,6 +6,7 @@ type Post = {
   category: string;
   tags: string[];
   description: string;
+  content: string;
 };
 
 export default Post;
