@@ -7,7 +7,8 @@ import {
   Stack,
 } from '@chakra-ui/react';
 import Post from '../../interfaces/Post.interface';
-import PostBody from './PostBody';
+import CustomLink from '../common/CustomLink/CustomLink';
+import CustomTag from '../common/Tag/Tag';
 
 type PostItemProps = {
   post: Post;
@@ -15,17 +16,28 @@ type PostItemProps = {
 
 const PostItem = ({ post }: PostItemProps) => {
   return (
-    <Stack spacing={4}>
-      <Card variant={'outline'}>
-        <Box>{post.date}</Box>
-        <CardHeader>
-          <Heading size="md">{post.title}</Heading>
-        </CardHeader>
-        <CardBody>
-          <Box>{post.description}</Box>
-        </CardBody>
-      </Card>
-    </Stack>
+    <Box my={4}>
+      <Stack spacing={4}>
+        <Card variant={'outline'}>
+          <Box>{post.date}</Box>
+          <CardHeader>
+            <Heading size="lg">
+              <Box>
+                <CustomLink title={post.title} href="#" />
+                <Box>
+                  {post.tags.map((tag) => {
+                    return <CustomTag title={tag} key={tag} ml={1} />;
+                  })}
+                </Box>
+              </Box>
+            </Heading>
+          </CardHeader>
+          <CardBody>
+            <Box>{post.description}</Box>
+          </CardBody>
+        </Card>
+      </Stack>
+    </Box>
   );
 };
 
