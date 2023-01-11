@@ -1,5 +1,12 @@
-import { Avatar, Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
-import NavLink from '../Navbar/NavLink';
+import {
+  Avatar,
+  Box,
+  Flex,
+  Link,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react';
+import NavLink from '../common/Navbar/NavLink';
 
 const Footer = () => {
   return (
@@ -25,11 +32,13 @@ const Footer = () => {
             <NavLink>Github</NavLink>
             <NavLink>Contact</NavLink>
           </Flex>
-          <Flex justifyContent={'center'}>
+          <Flex justifyContent={'center'} py={1}>
             <Avatar name="Janzzen" src="/assets/images/me.jpg" />
           </Flex>
           <Flex justifyContent={'center'}>
-            <Text>Developed by Eddrich Janzzen Ang powered by Next.js</Text>
+            <Text fontSize={'sm'}>
+              Developed by <Link>Eddrich Janzzen Ang</Link> powered by Vercel
+            </Text>
           </Flex>
         </Flex>
       </Box>

@@ -1,8 +1,8 @@
 import { Box } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../common/Navbar/Navbar';
+import Footer from './Footer';
+import Header from './Header';
 
 interface MainLayoutProps {
   children: ReactNode;

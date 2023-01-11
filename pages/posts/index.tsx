@@ -1,5 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react';
-import PostItem from '../../components/Post/PostItem';
+import PostItem from '../../components/post/PostItem';
 import Post from '../../interfaces/Post.interface';
 import { getAllPosts } from '../../lib/posts.api';
 
@@ -8,12 +8,10 @@ type PostPageProps = {
 };
 
 const PostsPage = ({ posts }: PostPageProps) => {
-  const mainPost = posts[0];
-
   return (
     <Box>
-      <Heading>Latest Posts</Heading>
-      <Box border={'1px'}>
+      <Heading variant={'h1'}>Latest Posts</Heading>
+      <Box>
         {posts.map((post) => (
           <PostItem post={post} key={post.title} />
         ))}
