@@ -32,6 +32,7 @@ export const getStaticProps = async () => {
     'tags',
     'description',
     'content',
+    'slug'
   ]);
 
   return {
