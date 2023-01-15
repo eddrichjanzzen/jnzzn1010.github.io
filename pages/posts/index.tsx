@@ -1,5 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react';
-import PostItem from '../../components/post/PostItem';
+import PostItem from '../../components/Post/PostItem';
 import Post from '../../interfaces/Post.interface';
 import { getAllPosts } from '../../lib/posts.api';
 
