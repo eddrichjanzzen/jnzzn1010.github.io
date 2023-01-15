@@ -23,7 +23,7 @@ const PostItem = ({ post }: PostItemProps) => {
           <CardHeader>
             <Heading size="lg">
               <Box>
-                <CustomLink title={post.title} href="#" />
+                <CustomLink href="#">{post.title}</CustomLink>
                 <Box>
                   {post.tags.map((tag) => {
                     return <CustomTag title={tag} key={tag} ml={1} />;
