@@ -1,18 +1,15 @@
-import { Stack } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+import ReactMarkdown from 'react-markdown';
 
-type PostBodyProps = {
+export interface IPostBodyProps {
   content: string;
-};
+}
 
-const PostBody = ({ content }: PostBodyProps) => {
+const PostBody = ({ content }: IPostBodyProps) => {
   return (
-    <Stack>
-      <div
-        // className={markdownStyles['markdown']}
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
-      This is definitely working
-    </Stack>
+    <Box>
+      <ReactMarkdown>{content}</ReactMarkdown>
+    </Box>
   );
 };
 
