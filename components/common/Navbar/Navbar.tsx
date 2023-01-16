@@ -8,7 +8,7 @@ const Navbar = () => {
         <Flex h={16} alignItems={'center'} justifyContent={'right'}>
           <Flex alignItems={'center'}>
             <NavLink href="/">Home</NavLink>
-            <NavLink href="posts">Posts</NavLink>
+            <NavLink href="/posts">Posts</NavLink>
             <NavLink>Projects</NavLink>
             <NavLink>Github</NavLink>
             <NavLink>Contact</NavLink>
