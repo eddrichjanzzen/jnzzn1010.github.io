@@ -1,4 +1,5 @@
 import { Box } from '@chakra-ui/react';
+import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
 import ReactMarkdown from 'react-markdown';
 
 export interface IPostBodyProps {
@@ -8,7 +9,7 @@ export interface IPostBodyProps {
 const PostBody = ({ content }: IPostBodyProps) => {
   return (
     <Box>
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <ReactMarkdown components={ChakraUIRenderer()} children={content}/>
     </Box>
   );
 };
