@@ -1,21 +1,21 @@
-
 import ReactMarkdown from 'react-markdown';
 import CodeBlock from '../CodeBlock/CodeBlock';
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
+import remarkGemoji from 'remark-gemoji';
+import remarkGfm from 'remark-gfm';
 
 interface IMarkdownProps {
   markdown: string;
 }
 
-const Markdown = ({markdown}: IMarkdownProps) => {
+const Markdown = ({ markdown }: IMarkdownProps) => {
   return (
     <ReactMarkdown
       children={markdown}
-      components={ChakraUIRenderer({ code: CodeBlock })}
+      components={ChakraUIRenderer()}
+      remarkPlugins={[remarkGfm, remarkGemoji]}
     />
   );
-
-
-}
+};
 
 export default Markdown;
