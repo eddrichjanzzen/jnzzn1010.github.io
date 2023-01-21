@@ -4,13 +4,13 @@ layout: blog-specific
 author: eddrichjanzzen
 date: 2021-02-28
 category: blog
-tags: 
-- angular
-- tech
+tags:
+  - angular
+  - tech
 description: "An article that describes the fix for an error with lazy loaded modules in angular: 'router-outlet' is not a known element.."
----	
+---
 
-While working on lazy loaded modules in angular 10, I ran into issues with adding components that use `<router-outlet></router-outlet>` in the template file. The compiler throws the error below even if the `RouterModule` is already defined in the `module.ts` imports: 
+While working on lazy loaded modules in angular 10, I ran into issues with adding components that use `<router-outlet></router-outlet>` in the template file. The compiler throws the error below even if the `RouterModule` is already defined in the `module.ts` imports:
 
 ```bash
 
@@ -20,14 +20,14 @@ Error: src/app/modules/authentication/authentication.component.html:1:1 - error 
 
 ```
 
-
 #### Solution
 
-There are two things one must remember when lazy loading modules that use `<router-outlet></router-outlet>`. 
+There are two things one must remember when lazy loading modules that use `<router-outlet></router-outlet>`.
 
 ###### 1. There is no need to re-import the module class in the `module.ts`, if it is lazy loaded. Angular already knows to load these modules by default.
 
 `main-routing.module.ts`
+
 ```typescript
 
 import { Routes, RouterModule } from '@angular/router';
@@ -57,6 +57,7 @@ export class MainRoutingModule { }
 ```
 
 `main.module.ts`
+
 ```typescript
 
 ...
@@ -80,19 +81,17 @@ export class MainModule { }
 
 ```
 
-###### 2. The component using `<router-outlet></router-outlet>` must be added in the  `module.ts` declarations list
+###### 2. The component using `<router-outlet></router-outlet>` must be added in the `module.ts` declarations list
 
 `main.component.html`
 
 ```html
-
 <router-outlet></router-outlet>
-
 ```
 
 `main.module.ts`
-```typescript
 
+```typescript
 import { MainComponent } from './main.component';
 import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
@@ -101,50 +100,13 @@ import { CommonModule } from '@angular/common';
 import { MainRoutingModule } from './main-routing.module';
 import { RouterModule } from '@angular/router';
 
-
 @NgModule({
-    declarations: [
-        MainComponent // <----- DON'T FORGET TO DECLARE THIS
-    ],
-    imports: [
-        CommonModule,
-        SharedModule,
-        RouterModule,
-        MainRoutingModule
-    ]
+  declarations: [
+    MainComponent, // <----- DON'T FORGET TO DECLARE THIS
+  ],
+  imports: [CommonModule, SharedModule, RouterModule, MainRoutingModule],
 })
-export class MainModule { }
-
+export class MainModule {}
 ```
 
-I hope this article will be of help to anyone who encounters a similar issue. :smile: :thumbsup: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+I hope this article will be of help to anyone who encounters a similar issue. :smile: :thumbsup:

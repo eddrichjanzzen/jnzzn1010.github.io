@@ -1,5 +1,5 @@
 ---
-title: "React Native: Space Between Styling"
+title: 'React Native: Space Between Styling'
 layout: blog-specific
 author: eddrichjanzzen
 date: 2021-07-31
@@ -7,7 +7,7 @@ category: blog
 tags:
   - tech
   - react
-description: "An article that describes a solution to add equal spacing between views using React Native Styling."
+description: 'An article that describes a solution to add equal spacing between views using React Native Styling.'
 ---
 
 ##### Learn once, write anywhere.
@@ -49,12 +49,12 @@ After another hour of trial and error, I was able to find another way. If you ar
 const numCols = 4;
 
 // Change to the spacing for each item
-const spacing = "1.25rem";
+const spacing = '1.25rem';
 
 const parentStyles = {
   flex: 1,
-  flexDirection: "row",
-  flexWrap: "wrap",
+  flexDirection: 'row',
+  flexWrap: 'wrap',
 };
 
 const childStyles = (index) => {

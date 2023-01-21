@@ -4,8 +4,8 @@ layout: blog-specific
 author: eddrichjanzzen
 date: 2020-01-25
 category: blog
-tags: 
-- tech
+tags:
+  - tech
 description: A test post for the beginning of my blog.
 ---
 
@@ -15,7 +15,7 @@ description: A test post for the beginning of my blog.
   print "Hello world"
 
   def hello():
-    return "hello world!" 
+    return "hello world!"
 ```
 
 #### Jemojis!!
