@@ -19,9 +19,6 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   };
 
   const items: Items = {};
-
-  console.log(fields);
-
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
     if (field === 'slug') {
@@ -30,12 +27,14 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     if (field === 'content') {
       items[field] = content;
     }
-    if (field === 'date') {
-      items[field] = String(data[field]);
-    }
 
     if (typeof data[field] !== 'undefined') {
       items[field] = data[field];
+    }
+
+    // explicitly convert the date into a string object to prevent nextjs parse issues
+    if (field === 'date') {
+      items[field] = data[field].toString();
     }
   });
 
@@ -44,10 +43,10 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 
 export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs();
-  const posts = slugs.map((slug) => getPostBySlug(slug, fields));
-  // // sort posts by date in descending order
-  // .sort((post1, post2) =>
-  //   new Date(post1.date) > new Date(post2.date) ? -1 : 1
-  // );
+  const posts = slugs
+    .map((slug) => getPostBySlug(slug, fields))
+    .sort((post1, post2) =>
+      new Date(post1.date) > new Date(post2.date) ? -1 : 1
+    );
   return posts;
 }
