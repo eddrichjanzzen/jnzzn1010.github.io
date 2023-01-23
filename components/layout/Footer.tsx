@@ -1,12 +1,7 @@
-import {
-  Avatar,
-  Box,
-  Flex,
-  Link,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Avatar, Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
+import CustomLink from '../common/CustomLink/CustomLink';
 import NavLink from '../common/Navbar/NavLink';
+import NavItems from '../constants/navbar.contants';
 
 const Footer = () => {
   return (
@@ -26,18 +21,17 @@ const Footer = () => {
           flexDir={'column'}
         >
           <Flex alignItems={'center'}>
-            <NavLink>Home</NavLink>
-            <NavLink>Posts</NavLink>
-            <NavLink>Projects</NavLink>
-            <NavLink>Github</NavLink>
-            <NavLink>Contact</NavLink>
+            {NavItems.map((navItem) => (
+              <NavLink href={navItem.href}>{navItem.title}</NavLink>
+            ))}
           </Flex>
           <Flex justifyContent={'center'} py={1}>
             <Avatar name="Janzzen" src="/assets/images/me.jpg" />
           </Flex>
           <Flex justifyContent={'center'}>
             <Text fontSize={'sm'}>
-              Developed by <Link>Eddrich Janzzen Ang</Link> powered by Vercel
+              Developed by <CustomLink href="#">Eddrich Janzzen Ang</CustomLink>
+              powered by <CustomLink href="#">Vercel</CustomLink>
             </Text>
           </Flex>
         </Flex>

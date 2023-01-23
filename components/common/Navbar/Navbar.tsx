@@ -1,4 +1,5 @@
 import { Box, Flex, useColorModeValue } from '@chakra-ui/react';
+import NavItems from '../../constants/navbar.contants';
 import NavLink from './NavLink';
 
 const Navbar = () => {
@@ -7,11 +8,9 @@ const Navbar = () => {
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'right'}>
           <Flex alignItems={'center'}>
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="/posts">Posts</NavLink>
-            <NavLink>Projects</NavLink>
-            <NavLink>Github</NavLink>
-            <NavLink>Contact</NavLink>
+            {NavItems.map((navItem) => (
+              <NavLink href={navItem.href}>{navItem.title}</NavLink>
+            ))}
           </Flex>
         </Flex>
       </Box>
