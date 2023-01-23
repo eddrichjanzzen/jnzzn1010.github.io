@@ -11,7 +11,7 @@ const PostsPage = ({ posts }: PostPageProps) => {
   return (
     <Box>
       <Heading variant={'h1'}>Latest Posts</Heading>
-      <Box>
+      <Box mt={4}>
         {posts.map((post) => (
           <PostItem post={post} key={post.title} />
         ))}

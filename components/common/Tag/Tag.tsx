@@ -6,7 +6,7 @@ interface ITagProps extends BadgeProps {
 
 const Tag = ({ title, colorScheme = 'gray', ...props }: ITagProps) => {
   return (
-    <Badge ml={1} colorScheme={colorScheme} {...props}>
+    <Badge p={1.5} ml={1} colorScheme={colorScheme} {...props}>
       {title}
     </Badge>
   );

@@ -23,15 +23,17 @@ const PostItem = ({ post }: PostItemProps) => {
     <Box my={4}>
       <Stack spacing={4}>
         <Card variant={'outline'}>
-          <CardHeader>
-            <Text size="sm" fontWeight={700} color={'gray.400'}>
+          <CardHeader pb={0}>
+            <Text size="xs" fontWeight={400} color={'gray.400'}>
               {formattedDate}
             </Text>
-            <Heading size="lg">
+            <Heading size="md">
               <Box>
-                <CustomLink href={`posts/${post.slug}`}>
-                  {post.title}
-                </CustomLink>
+                <Box py={2}>
+                  <CustomLink href={`posts/${post.slug}`}>
+                    {post.title}
+                  </CustomLink>
+                </Box>
                 <Box>
                   {post.tags.map((tag) => {
                     return <CustomTag title={tag} key={tag} ml={1} />;
