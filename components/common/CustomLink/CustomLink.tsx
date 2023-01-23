@@ -7,7 +7,7 @@ export interface ICustomLinkProps extends LinkProps {
 }
 
 const CustomLink = (props: ICustomLinkProps) => {
-  const { href, children, color = 'teal.400', ...rest } = props;
+  const { href, children, color = 'teal.500', ...rest } = props;
   return (
     <NextLink href={href} passHref legacyBehavior>
       <CharkaLink color={color} {...rest}>
