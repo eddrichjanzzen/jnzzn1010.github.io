@@ -1,5 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react';
-import PostItem from '../../components/Post/PostItem';
+import PostItem from '../../components/post/PostItem';
 import Post from '../../interfaces/Post.interface';
 import { getAllPosts } from '../../lib/posts.api';
 
@@ -27,12 +27,12 @@ export const getStaticProps = async () => {
     'title',
     'layout',
     'author',
-    // 'date',
+    'date',
     'category',
     'tags',
     'description',
     'content',
-    'slug'
+    'slug',
   ]);
 
   return {

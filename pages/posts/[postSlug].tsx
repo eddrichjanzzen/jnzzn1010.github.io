@@ -1,5 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react';
-import PostBody from '../../components/Post/PostBody';
+import PostBody from '../../components/post/PostBody';
 
 import Post from '../../interfaces/Post.interface';
 import { getAllPosts, getPostBySlug } from '../../lib/posts.api';
