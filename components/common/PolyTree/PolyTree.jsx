@@ -5,12 +5,15 @@ Command: npx gltfjsx@6.1.4 poly_tree_draco.gltf
 
 import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
+import { useFrame } from '@react-three/fiber';
 
 export default function PolyTree(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF(
     '/assets/3d-assets/poly_tree_draco.gltf'
   );
+  useFrame((_state, delta) => (group.current.rotation.y += delta));
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
@@ -27,4 +30,4 @@ export default function PolyTree(props) {
   );
 }
 
-useGLTF.preload('/poly_tree_draco.gltf');
+useGLTF.preload('/assets/3d-assets/poly_tree_draco.gltf');
