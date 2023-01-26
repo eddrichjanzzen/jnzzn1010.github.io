@@ -1,4 +1,7 @@
 import { Box, Heading, Stack, Text } from '@chakra-ui/react';
+import Cube from '../components/common/Cube/Cube';
+import PolyTree from '../components/common/PolyTree/PolyTree';
+import ThreeCanvas from '../components/layout/ThreeCanvas';
 const Home = () => {
   return (
     <Box>
@@ -19,6 +22,10 @@ const Home = () => {
           experience using different application development frameworks such as
           Django, Flask and .NET.
         </Text>
+
+        <ThreeCanvas>
+          <PolyTree />
+        </ThreeCanvas>
 
         <Text>
           For frontend development, I have used frameworks such as React, React
