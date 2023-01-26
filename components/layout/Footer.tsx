@@ -22,7 +22,9 @@ const Footer = () => {
         >
           <Flex alignItems={'center'}>
             {NavItems.map((navItem) => (
-              <NavLink href={navItem.href}>{navItem.title}</NavLink>
+              <NavLink href={navItem.href} key={navItem.title}>
+                {navItem.title}
+              </NavLink>
             ))}
           </Flex>
           <Flex justifyContent={'center'} py={1}>
