@@ -22,23 +22,23 @@ Javascipt XML or [JSX](https://www.w3schools.com/react/react_jsx.asp#:~:text=JSX
 
 The good news is, you can enable Emmet for React using following steps:
 
-##### 1. Go to the settings page in VS Code
+#### 1. Go to the settings page in VS Code
 
 ![settings](/assets/images/blog/vs-code-react/settings-page.png){:class="img-blog"}
 
-##### 2. Go to the `Workspace Settings` tab
+#### 2. Go to the `Workspace Settings` tab
 
 ![settings](/assets/images/blog/vs-code-react/workspace-settings.png){:class="img-blog"}
 
-##### 3. Under `Extensions` look for `Emmet`
+#### 3. Under `Extensions` look for `Emmet`
 
 ![settings](/assets/images/blog/vs-code-react/emmet-boxed.png){:class="img-blog"}
 
-##### 4. Click on `"Edit in settings.json"`
+#### 4. Click on `"Edit in settings.json"`
 
 ![settings](/assets/images/blog/vs-code-react/settings.png){:class="img-blog"}
 
-##### 5. Add the following lines of code to `"settings.json"`
+#### 5. Add the following lines of code to `"settings.json"`
 
 ```json
 {
@@ -56,19 +56,19 @@ Success! Emmet should now be working!!! :raised_hands:
 
 To install Prettier you can follow these steps:
 
-##### 1. In the side panel click on the Extensions icon
+#### 1. In the side panel click on the Extensions icon
 
 ![settings](/assets/images/blog/vs-code-react/extensions.png){:class="img-blog"}
 
-##### 2. In the search bar, search for `Prettier`
+#### 2. In the search bar, search for `Prettier`
 
 ![settings](/assets/images/blog/vs-code-react/search-prettier.png){:class="img-blog"}
 
-##### 3. Install `Pretter`
+#### 3. Install `Pretter`
 
 ![settings](/assets/images/blog/vs-code-react/install-prettier.png){:class="img-blog"}
 
-##### 4. To verify prettier is installed, you should see the following on the bottom of the code editor
+#### 4. To verify prettier is installed, you should see the following on the bottom of the code editor
 
 ![settings](/assets/images/blog/vs-code-react/prettier-verify.png){:class="img-blog"}
 

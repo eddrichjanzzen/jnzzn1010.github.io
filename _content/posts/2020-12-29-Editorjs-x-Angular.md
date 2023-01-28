@@ -90,7 +90,7 @@ You can also find a list of all available `Blocks` [here](https://github.com/edi
 
 Before we proceed, this article assumes some basic knowledge of Angular. It also assumes that you have `Angular` and `npm`, already installed in your machine. For those who don't know what `Angular` or `npm` is, you may check it out [here](https://angular.io/), and [here](https://www.npmjs.com/).
 
-##### Step 1: Set up
+#### Step 1: Set up
 
 Create your angular app
 
@@ -128,7 +128,7 @@ $ npm i @ngneat/until-destroy --save
 
 ```
 
-##### Step 2: Create your Article Editor Component
+#### Step 2: Create your Article Editor Component
 
 Create your article-editor component
 
@@ -152,7 +152,7 @@ This should create a folder inside `app` called `article-editor` with the follow
 
 ```
 
-##### Step 2: Define the Editor.js configurations
+#### Step 2: Define the Editor.js configurations
 
 _Creating external config file:_ In the `article-editor` folder, create the following file: `article-editor.config.ts`
 
@@ -214,7 +214,7 @@ export const editorjsConfig = {
 ...
 ```
 
-##### Step 3: Define the Editor.js Object Instance
+#### Step 3: Define the Editor.js Object Instance
 
 _Defining the article-editor component logic:_ Replace the code in `article-editor.component.ts`, with the following code snippet:
 
@@ -279,7 +279,7 @@ export class ArticleEditorComponent implements OnInit {
 
 The code snippet above contains all the imports, functions, and set up needed to render Editor.js within the component. The code will be explained further below in the code walkthrough.
 
-##### Step 4: Adding Markup
+#### Step 4: Adding Markup
 
 _Adding html_: In the `article-editor.component.html`, file copy the following mark up:
 
@@ -377,7 +377,7 @@ Note that we can use `::ng-deep` to overwrite Editor.js specific styles, to make
 }
 ```
 
-##### Step 5: Adding article-editor to app-component
+#### Step 5: Adding article-editor to app-component
 
 Replace the contents in the `app.component.html` with the following snippet:
 
@@ -385,7 +385,7 @@ Replace the contents in the `app.component.html` with the following snippet:
 <app-article-editor></app-article-editor>
 ```
 
-##### Step 5: Test your app
+#### Step 5: Test your app
 
 ```bash
 
@@ -395,7 +395,7 @@ $ ng serve --open
 
 #### Code Walkthrough:
 
-##### Mutation Observer
+#### Mutation Observer
 
 Angular comes with a built-in detection that can keep track of any changes on `input` fields. Please see [FormControls](https://angular.io/api/forms/FormControl), and [ReactiveForms](https://angular.io/guide/reactive-forms). This is feature comes in handy when dealing with `<textarea>`, `<input>`, or `<form>` elements. However for this example, we are not able to utilize this feature out of the box.
 

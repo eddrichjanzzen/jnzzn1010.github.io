@@ -30,7 +30,7 @@ urlpatterns = [
 
 However, I found that the approach above will only work if the UUID supplied matches the specific pattern. This means that supplying an invalid UUID; lets say a UUID that's missing a few characters will always throw a 404 page and will never reach the view.
 
-##### Original
+#### Original
 
 request:
 
@@ -57,7 +57,7 @@ response
 }
 ```
 
-##### Missing few characters
+#### Missing few characters
 
 request:
 
@@ -93,7 +93,7 @@ urlpatterns = [
 
 In this example, we can match any regEx after `tasks/` with the `pk`, so that regardless whether the UUID supplied is invalid, the request would still hit the view, and will respond with details not found, instead of a the 404 page.
 
-##### Original
+#### Original
 
 request:
 
@@ -120,7 +120,7 @@ response:
 }
 ```
 
-##### Missing few characters
+#### Missing few characters
 
 request:
 

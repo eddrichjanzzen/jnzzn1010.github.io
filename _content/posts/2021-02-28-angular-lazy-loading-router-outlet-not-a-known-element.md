@@ -24,7 +24,7 @@ Error: src/app/modules/authentication/authentication.component.html:1:1 - error 
 
 There are two things one must remember when lazy loading modules that use `<router-outlet></router-outlet>`.
 
-###### 1. There is no need to re-import the module class in the `module.ts`, if it is lazy loaded. Angular already knows to load these modules by default.
+##### 1. There is no need to re-import the module class in the `module.ts`, if it is lazy loaded. Angular already knows to load these modules by default.
 
 `main-routing.module.ts`
 
@@ -81,7 +81,7 @@ export class MainModule { }
 
 ```
 
-###### 2. The component using `<router-outlet></router-outlet>` must be added in the `module.ts` declarations list
+##### 2. The component using `<router-outlet></router-outlet>` must be added in the `module.ts` declarations list
 
 `main.component.html`
 

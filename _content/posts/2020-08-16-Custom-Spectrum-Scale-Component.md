@@ -28,7 +28,7 @@ Combining D3 with Angular, we are able to take advantage of a powerful visualiza
 
 #### Color Scale Component
 
-##### Set up and Installation:
+#### Set up and Installation:
 
 Install the following dependencies: `d3` and `ng-color-scale`
 
@@ -66,7 +66,7 @@ import { NgColorScaleModule } from 'ng-color-scale';
 export class AppModule {}
 ```
 
-##### Usage:
+#### Usage:
 
 In your `app.component.html` add the following:
 

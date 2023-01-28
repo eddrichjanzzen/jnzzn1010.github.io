@@ -10,7 +10,7 @@ tags:
 description: 'An article that describes a the fix for the window.AddEventListener is not a function.'
 ---
 
-##### window.addEventListener is not a function
+#### window.addEventListener is not a function
 
 Recently, I've been working on a adding an event listener on a React Native Application to keep track of window events.
 
@@ -41,7 +41,7 @@ FAIL  __tests__/ResetCodeScreen.test.jsx
 
 After some investigation, I found that `window.addEventListener` is a case of something that exists in the browser, but isn't nessesarily implemented in React Native.
 
-##### Solution
+#### Solution
 
 I was able to resolve the issue by explicitly adding a checking for the platform like so:
 
@@ -76,7 +76,7 @@ import { Platform } from 'react-native';
   }
 ```
 
-##### Result
+#### Result
 
 ```bash
  PASS  components/Ui/PasscodeScreen/__test__/PasscodeScreen.test.jsx (6.476s)
@@ -86,7 +86,7 @@ import { Platform } from 'react-native';
 
 There you have it! I hope this article will be of help to anyone who encounters a similar issue. :smile: :thumbsup:
 
-##### Sources:
+#### Sources:
 
 - [https://stackoverflow.com/questions/66145171/i-had-an-issue-today-with-window-addeventlistener-and-react-native](https://stackoverflow.com/questions/66145171/i-had-an-issue-today-with-window-addeventlistener-and-react-native)
 - [https://reactnative.dev/docs/platform-specific-code](https://reactnative.dev/docs/platform-specific-code)

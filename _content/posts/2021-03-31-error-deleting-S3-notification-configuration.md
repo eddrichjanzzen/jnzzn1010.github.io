@@ -28,7 +28,7 @@ Initial research led me to an article by AWS stating that the issue could be due
 
 To solve this issue, I found that appending a random string after the bucket name works. Here's how:
 
-##### Step 1:
+#### Step 1:
 
 Add a random string generator using the `random_string` resource of terraform
 
@@ -45,7 +45,7 @@ resource "random_string" "id" {
 
 For this example we specify a length of 5, and no special or upper case characters.
 
-##### Step 2:
+#### Step 2:
 
 Define a your S3 bucket resource appending the result of the random string generator as follows:
 

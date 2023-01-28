@@ -11,7 +11,7 @@ tags:
 description: 'An article that describes a solution for raise conditions when running an application with a database in docker'
 ---
 
-##### Application container runs before the database is ready
+#### Application container runs before the database is ready
 
 Recently, I've started building a new project with [Django](https://www.djangoproject.com/) in conjunction with docker. I am using `docker-compose` to manage two services namely, the django application and the database (postgresql). I ran into an issue where sometimes the django application container runs before the database is ready. This causes an error where the django application is unable to connect to the database as seen below:
 
@@ -33,7 +33,7 @@ Although this issue happens intermittently, restarting docker-compose everytime 
 
 So, is there anything we can do to tell the django application to wait for the database? 🤔
 
-##### Solution
+#### Solution
 
 After some research, I found that `docker-compose` actually supports healthchecks. A healthcheck is essentially a way to validate if a service is running. We are able to check if a specific container is healthy given some condition. We achieve this by using `depends_on` in conjunction with `healthcheck` as follows:
 
@@ -74,7 +74,7 @@ In the example above, the healthcheck property has a condition to check if the `
 
 I really hope this short article will be of help to anyone who encounters a similar issue. :smile: :thumbsup:
 
-##### Sources:
+#### Sources:
 
 - [https://stackoverflow.com/questions/31746182/docker-compose-wait-for-container-x-before-starting-y](https://stackoverflow.com/questions/31746182/docker-compose-wait-for-container-x-before-starting-y)
 - [https://github.com/peter-evans/docker-compose-healthcheck](https://github.com/peter-evans/docker-compose-healthcheck)

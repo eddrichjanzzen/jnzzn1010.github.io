@@ -10,7 +10,7 @@ tags:
 description: 'An article that describes a solution to add equal spacing between views using React Native Styling.'
 ---
 
-##### Learn once, write anywhere.
+#### Learn once, write anywhere.
 
 [React Native](https://reactnative.dev/) is an amazing tool for writing cross plaform applications. If you're thinking about building applications with the the capability to support multiple platforms, then this is the tool for you! :raised_hands:
 
