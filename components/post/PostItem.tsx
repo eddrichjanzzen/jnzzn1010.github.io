@@ -24,7 +24,7 @@ const PostItem = ({ post }: PostItemProps) => {
       <Stack spacing={4}>
         <Card variant={'outline'}>
           <CardHeader pb={0}>
-            <Text size="xs" fontWeight={400} color={'gray.400'}>
+            <Text size="xs" fontWeight={400} color={'gray.500'}>
               {formattedDate}
             </Text>
             <Heading size="md">
