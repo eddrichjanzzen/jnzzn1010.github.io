@@ -11,14 +11,6 @@ const CodeBlock: React.FunctionComponent<ICodeBlockProps> = ({
   language,
   className,
 }) => {
-  if (!value) {
-    return (
-      <pre className={className}>
-        <code>Empty CodeBlock</code>
-      </pre>
-    );
-  }
-
   const highlightedCode = Prism.highlight(value, Prism.languages[language], '');
   return (
     <pre className={className}>
