@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 import PostBody from '../../components/post/PostBody';
 
 import Post from '../../interfaces/Post.interface';
+import markdownToHtml from '../../lib/markdownToHtml';
 import { getAllPosts, getPostBySlug } from '../../lib/posts.api';
 
 export interface IPostDetailPageParams {
@@ -39,10 +40,13 @@ export async function getStaticProps({ params }: Params) {
     'author',
   ]);
 
+  const content = await markdownToHtml(post.content);
+
   return {
     props: {
       post: {
         ...post,
+        content,
       },
     },
   };
