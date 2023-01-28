@@ -32,7 +32,13 @@ const Footer = () => {
           </Flex>
           <Flex justifyContent={'center'}>
             <Text fontSize={'sm'}>
-              Developed by <CustomLink href="#">Eddrich Janzzen Ang</CustomLink>
+              Developed by{' '}
+              <CustomLink
+                href="https://github.com/eddrichjanzzen"
+                target="_blank"
+              >
+                Eddrich Janzzen Ang{' '}
+              </CustomLink>
               powered by <CustomLink href="#">Vercel</CustomLink>
             </Text>
           </Flex>
