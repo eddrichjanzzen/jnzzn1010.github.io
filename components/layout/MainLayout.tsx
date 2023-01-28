@@ -14,7 +14,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <Header />
       <Navbar />
       <main>
-        <Box mx={{ base: '3%', md: '18%', lg: '22%' }} mt={10} mb={32}>
+        <Box mx={{ base: '3%', md: '18%', lg: '22%' }} pt={10} pb={32}>
           {children}
         </Box>
       </main>
