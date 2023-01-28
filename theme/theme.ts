@@ -25,6 +25,25 @@ const theme = extendTheme(
       a: {
         color: 'teal.500',
       },
+      pre: {
+        p: 4,
+        rounded: 'md',
+        bg: 'grey.100',
+        color: 'inherit',
+        overflow: 'auto',
+
+        _dark: {
+          bg: 'inherit',
+        },
+
+        code: {
+          fontWeight: 'normal',
+
+          '&::before, &::after': {
+            content: '""',
+          },
+        },
+      },
     },
   })
 );
