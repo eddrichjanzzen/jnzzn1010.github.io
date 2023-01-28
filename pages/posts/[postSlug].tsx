@@ -1,4 +1,5 @@
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
+import dayjs from 'dayjs';
 import PostBody from '../../components/post/PostBody';
 
 import Post from '../../interfaces/Post.interface';
@@ -9,9 +10,16 @@ export interface IPostDetailPageParams {
 }
 
 const PostDetailPage = ({ post }: IPostDetailPageParams) => {
+  const formattedDate = dayjs(post.date).format('MMMM DD, YYYY');
+
   return (
     <Box>
-      <Heading mb={8}>{post.title}</Heading>
+      <Heading mb={4} variant="h1" color={'teal.400'}>
+        {post.title}
+      </Heading>
+      <Text size="xs" fontWeight={400} color={'gray.500'}>
+        {`Posted on ${formattedDate}  • ${post.author}`}
+      </Text>
       <PostBody content={post.content} />
     </Box>
   );
@@ -24,7 +32,12 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.postSlug, ['title', 'content']);
+  const post = getPostBySlug(params.postSlug, [
+    'title',
+    'content',
+    'date',
+    'author',
+  ]);
 
   return {
     props: {
