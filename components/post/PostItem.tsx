@@ -30,13 +30,20 @@ const PostItem = ({ post }: PostItemProps) => {
             <Heading size="md">
               <Box>
                 <Box py={2}>
-                  <CustomLink href={`posts/${post.slug}`}>
+                  <CustomLink href={`/posts/${post.slug}`}>
                     {post.title}
                   </CustomLink>
                 </Box>
                 <Box>
                   {post.tags.map((tag) => {
-                    return <CustomTag title={tag} key={tag} ml={1} />;
+                    return (
+                      <CustomTag
+                        title={tag}
+                        key={tag}
+                        ml={1}
+                        href={`/posts/tag/${tag}`}
+                      />
+                    );
                   })}
                 </Box>
               </Box>
