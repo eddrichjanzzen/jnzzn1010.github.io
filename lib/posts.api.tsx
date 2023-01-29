@@ -50,3 +50,8 @@ export function getAllPosts(fields: string[] = []) {
     );
   return posts;
 }
+
+export function getAllPostsByTag(fields: string[] = [], tag: string) {
+  const posts = getAllPosts(fields).filter((post) => post.tags.includes(tag));
+  return posts;
+}
