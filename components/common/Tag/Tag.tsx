@@ -1,14 +1,19 @@
 import { Badge, BadgeProps } from '@chakra-ui/react';
+import CustomLink from '../CustomLink/CustomLink';
 
 interface ITagProps extends BadgeProps {
   title: string;
+  colorScheme?: string;
+  href: string;
 }
 
-const Tag = ({ title, colorScheme = 'gray', ...props }: ITagProps) => {
+const Tag = ({ title, colorScheme = 'gray', href = '#' }: ITagProps) => {
   return (
-    <Badge p={1.5} ml={1} colorScheme={colorScheme} {...props}>
-      {title}
-    </Badge>
+    <CustomLink href={href}>
+      <Badge p={1.5} ml={1} colorScheme={colorScheme}>
+        {title}
+      </Badge>
+    </CustomLink>
   );
 };
 

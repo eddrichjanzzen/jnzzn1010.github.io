@@ -8,10 +8,10 @@ export interface IButtonLinkProps extends ButtonProps {
 }
 
 const ButtonLink = (props: IButtonLinkProps) => {
-  const { href, title, external = false, ...rest } = props;
+  const { href, title, external = false } = props;
   return (
     <NextLink href={href} passHref>
-      <Button as="a" target={external ? '_blank' : '_self'} {...rest}>
+      <Button as="a" target={external ? '_blank' : '_self'}>
         {title}
       </Button>
     </NextLink>
