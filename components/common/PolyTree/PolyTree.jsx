@@ -22,8 +22,8 @@ export default function PolyTree(props) {
           geometry={nodes.Tree_lp_11.geometry}
           material={materials.Material}
           rotation={[Math.PI / 2, 0, 0]}
-          position={[0, -1, 0]}
-          scale={0.00125}
+          position={[0, -2, 0]}
+          scale={0.0016}
         />
       </group>
     </group>

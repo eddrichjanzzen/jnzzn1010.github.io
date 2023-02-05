@@ -8,7 +8,7 @@ interface IThreeCanvasProps {
 }
 
 const Wrapper = styled.div`
-  height: 250px;
+  height: 200px;
 `;
 
 const ThreeCanvas = ({ children }: IThreeCanvasProps) => {
