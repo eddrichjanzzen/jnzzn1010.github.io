@@ -42,7 +42,7 @@ const Home = () => {
           </Text>
           <Text>
             One of my favorite parts of being a software engineer is DevOps. 👨‍💻
-            I get a thrill out of building pipelines and automating tasks to
+            I get a thrill out of building 👷 pipelines and automating tasks to
             make development smoother and faster.
           </Text>
         </Stack>
