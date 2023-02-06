@@ -3,7 +3,7 @@ import Head from 'next/head';
 const Header = () => {
   return (
     <Head>
-      <title>Janzzen</title>
+      <title>Janzzen | Personal Blog</title>
       <meta name="description" content="My personal blog." />
       <link rel="icon" href="/favicon.ico" />
     </Head>
