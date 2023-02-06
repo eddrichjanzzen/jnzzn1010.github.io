@@ -1,20 +1,22 @@
 import { Box, Heading } from '@chakra-ui/react';
-import PostItem from '../../components/post/PostItem';
+import PostList from '../../components/post/PostList';
+import TagGroup from '../../components/tag/TagGroup';
 import Post from '../../interfaces/Post.interface';
 import { getAllPosts } from '../../lib/posts.api';
 
-type PostPageProps = {
+export interface IPostPageProps {
   posts: Post[];
-};
+}
 
-const PostsPage = ({ posts }: PostPageProps) => {
+const PostsPage = ({ posts }: IPostPageProps) => {
   return (
     <Box>
-      <Heading variant={'h1'}>Latest Posts</Heading>
-      <Box mt={4}>
-        {posts.map((post) => (
-          <PostItem post={post} key={post.title} />
-        ))}
+      <Box>
+        <TagGroup />
+      </Box>
+      <Box>
+        <Heading variant={'h1'}>Latest Posts</Heading>
+        <PostList posts={posts} />
       </Box>
     </Box>
   );

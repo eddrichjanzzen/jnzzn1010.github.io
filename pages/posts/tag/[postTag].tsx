@@ -1,29 +1,29 @@
-import { Box, Heading } from '@chakra-ui/react';
-import PostItem from '../../../components/post/PostItem';
-import Post from '../../../interfaces/Post.interface';
+import { Box, Button, Heading } from '@chakra-ui/react';
+import ButtonLink from '../../../components/common/ButtonLink';
+import PostList, { IPostPageProps } from '../../../components/post/PostList';
 import { getAllPosts, getAllPostsByTag } from '../../../lib/posts.api';
 import { capitalize } from '../../../util/capitalize';
 
-type PostPageProps = {
-  posts: Post[];
+export interface IPostTagPageProps extends IPostPageProps {
   postTag: string;
-};
+}
 
-const PostTagPage = ({ posts, postTag }: PostPageProps) => {
+const PostTagPage = ({ posts, postTag }: IPostTagPageProps) => {
   return (
     <Box>
-      <Heading variant={'h1'}>{capitalize(postTag)}</Heading>
-      <Box mt={4}>
-        {posts.map((post) => (
-          <PostItem post={post} key={post.title} />
-        ))}
+      <Box display="flex" justifyContent="flex-end">
+        <ButtonLink title={'Show All'} href={'/posts'} />
+      </Box>
+      <Box>
+        <Heading variant={'h1'}>{capitalize(postTag)}</Heading>
+        <PostList posts={posts} />
       </Box>
     </Box>
   );
 };
 
 type Params = {
-  params: PostPageProps;
+  params: IPostTagPageProps;
 };
 
 export const getStaticProps = async ({ params }: Params) => {
