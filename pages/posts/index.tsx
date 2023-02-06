@@ -11,7 +11,7 @@ export interface IPostPageProps {
 const PostsPage = ({ posts }: IPostPageProps) => {
   return (
     <Box>
-      <Box>
+      <Box mb={4}>
         <TagGroup />
       </Box>
       <Box>

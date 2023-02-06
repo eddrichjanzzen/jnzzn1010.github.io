@@ -9,7 +9,11 @@ const Navbar = () => {
         <Flex h={16} alignItems={'center'} justifyContent={'right'}>
           <Flex alignItems={'center'}>
             {NavItems.map((navItem) => (
-              <NavLink href={navItem.href} key={navItem.title}>
+              <NavLink
+                href={navItem.href}
+                key={navItem.title}
+                fontSize={'1.3rem'}
+              >
                 {navItem.title}
               </NavLink>
             ))}

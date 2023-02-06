@@ -27,7 +27,7 @@ const Footer = () => {
               </NavLink>
             ))}
           </Flex>
-          <Flex justifyContent={'center'} py={1}>
+          <Flex justifyContent={'center'} py={2}>
             <Avatar name="Janzzen" src="/assets/images/me.jpg" />
           </Flex>
           <Flex justifyContent={'center'}>
