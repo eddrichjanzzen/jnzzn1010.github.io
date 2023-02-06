@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import Navbar from '../common/Navbar/Navbar';
+import Navbar from '../common/Navbar';
 import Footer from './Footer';
 import Header from './Header';
 

@@ -1,6 +1,6 @@
 import { Box, Heading, Stack, Text } from '@chakra-ui/react';
-import CustomLink from '../components/common/CustomLink/CustomLink';
-import PolyTree from '../components/common/PolyTree/PolyTree';
+import CustomLink from '../components/common/CustomLink';
+import PolyTree from '../components/common/PolyTree';
 import ThreeCanvas from '../components/layout/ThreeCanvas';
 const Home = () => {
   return (

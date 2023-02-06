@@ -1,6 +1,6 @@
 import { Avatar, Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
-import CustomLink from '../common/CustomLink/CustomLink';
-import NavLink from '../common/Navbar/NavLink';
+import CustomLink from '../common/CustomLink';
+import NavLink from '../common/NavLink';
 import NavItems from '../constants/navbar.contants';
 
 const Footer = () => {

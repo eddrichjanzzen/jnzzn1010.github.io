@@ -8,8 +8,8 @@ import {
   Text,
 } from '@chakra-ui/react';
 import Post from '../../interfaces/Post.interface';
-import CustomLink from '../common/CustomLink/CustomLink';
-import CustomTag from '../common/Tag/Tag';
+import CustomLink from '../common/CustomLink';
+import CustomTag from '../common/Tag';
 import dayjs from 'dayjs';
 
 type PostItemProps = {
@@ -27,7 +27,7 @@ const PostItem = ({ post }: PostItemProps) => {
             <Text size="xs" fontWeight={400} color={'gray.500'}>
               {formattedDate}
             </Text>
-            <Heading size="md">
+            <Heading size="lg">
               <Box>
                 <Box py={2}>
                   <CustomLink href={`/posts/${post.slug}`}>
