@@ -1,5 +1,5 @@
 import { Box, Flex, useColorModeValue } from '@chakra-ui/react';
-import NavItems from '../../constants/navbar.contants';
+import NavItems from '../constants/navbar.contants';
 import NavLink from './NavLink';
 
 const Navbar = () => {
