@@ -10,14 +10,14 @@ const TagGroup = () => {
         flexDirection="column"
         width={{ base: '100%', md: '50%', lg: '50%' }}
       >
-        <Box p={2}>
+        <Box>
           <Heading>Tags</Heading>
         </Box>
-        <Box>
+        <Box my={2}>
           {TagItems.map(({ title, href }) => {
             return (
-              <Box m={1} display="inline-block">
-                <Tag title={title} href={`posts/tag/${href}`} m={2} />
+              <Box my={1} display="inline-block">
+                <Tag title={title} href={`posts/tag/${href}`} />
               </Box>
             );
           })}

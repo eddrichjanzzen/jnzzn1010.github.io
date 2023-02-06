@@ -16,7 +16,7 @@ const Tag = ({
 }: ITagProps) => {
   return (
     <CustomLink href={href}>
-      <Badge p={1.5} ml={1} colorScheme={colorScheme} variant={variant}>
+      <Badge p={1.5} mr={2} colorScheme={colorScheme} variant={variant}>
         {title}
       </Badge>
     </CustomLink>
