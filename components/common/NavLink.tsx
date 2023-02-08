@@ -1,4 +1,4 @@
-import { Text, Link, useColorModeValue } from '@chakra-ui/react';
+import { Text, Link } from '@chakra-ui/react';
 import { ReactNode } from 'react';
 
 interface INavLinkProps {
