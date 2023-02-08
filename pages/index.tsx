@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Heading, Stack, Text } from '@chakra-ui/react';
 import CustomLink from '../components/common/CustomLink';
 import PolyTree from '../components/common/PolyTree';

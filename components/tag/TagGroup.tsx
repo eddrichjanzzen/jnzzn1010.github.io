@@ -16,7 +16,7 @@ const TagGroup = () => {
         <Box my={2}>
           {TagItems.map(({ title, href }) => {
             return (
-              <Box my={1} display="inline-block">
+              <Box my={1} display="inline-block" key={title}>
                 <Tag title={title} href={`posts/tag/${href}`} />
               </Box>
             );
