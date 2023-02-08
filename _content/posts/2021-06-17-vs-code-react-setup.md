@@ -10,7 +10,13 @@ tags:
 description: 'An article that shows how to customize VS code to improve productivity with React'
 ---
 
-Recently, I've been looking into learning [React](https://reactjs.org/). React is javascript library developed and maintained by Facebook. ![React](/assets/images/blog/vs-code-react/vs-code-react.png){:class="img-blog-right width-40"} It is mainly used to create user interfaces, but can also be used to build mobile applications.
+Recently, I've been looking into learning [React](https://reactjs.org/). React is javascript library developed and maintained by Facebook.
+
+<div class="img-blog-right width-40">
+	<img src="/assets/images/blog/vs-code-react/vs-code-react.png" alt="React">
+</div>
+
+It is mainly used to create user interfaces, but can also be used to build mobile applications.
 
 In this article, I will be sharing some of the configurations and plugins for [Visual Studio Code](https://code.visualstudio.com/) to make developing applications in React way faster.
 

@@ -10,7 +10,11 @@ tags:
 description: 'An article that walks through how to integrate Editor.js into an Angular application'
 ---
 
-Writing or creating content has always been a crutial part of the web since its beginning. As the web continues to mature, the demand for dynamic, customizable, and flexibile text editors has evolved as well. Gone are the days of `<textarea>` where the content being written is static. Most modern text editors now follow the concept of [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) (What You See Is What You Get), where the content being edited within a form resembles its actual appreance when printed or displayed on screen. As a matter of fact, the open source community offers many free options that suit these needs. ![Angular](/assets/images/blog/angular-editorjs/angular-x-editorjs.png){:class="img-blog-right"}
+Writing or creating content has always been a crutial part of the web since its beginning. As the web continues to mature, the demand for dynamic, customizable, and flexibile text editors has evolved as well. Gone are the days of `<textarea>` where the content being written is static. Most modern text editors now follow the concept of [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) (What You See Is What You Get), where the content being edited within a form resembles its actual appreance when printed or displayed on screen. As a matter of fact, the open source community offers many free options that suit these needs.
+
+<div class="img-blog-right">
+	<img src="/assets/images/blog/angular-editorjs/angular-x-editorjs.png" alt="Angular">
+</div>
 
 In this article, we will be looking into an emerging Block-Styled editor, [Editor.js](https://editorjs.io/). We will then walkthough how this tool might be implemented in an Angular application.
 
@@ -449,7 +453,9 @@ When the article-editor component is initialized, we immediately set up a new su
 
 #### The Final Product
 
-![Angular](/assets/images/angular-editorjs/editorjs.gif){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/angular-editorjs/editorjs.gif" alt="Angular">
+</div>
 
 There you have it. You have successfully integrated `Editor.js` with `Angular`. :clap: :clap: :clap:
 

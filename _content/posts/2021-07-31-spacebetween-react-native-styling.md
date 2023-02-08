@@ -26,6 +26,10 @@ Recently, I've been working on a feature that diplays a list of elements into th
 }
 ```
 
+<div class="img-blog-center">
+	<img src="/assets/images/blog/reactnative-spacebetween/grid-spaced.png" alt="grid-gap">
+</div>
+
 ![grid-gap](/assets/images/blog/reactnative-spacebetween/grid-spaced.png){:class="img-blog-center"}
 
 However as I was implementing tests, I discovered that React Native doesn't support the usage of `grid-gap`.
@@ -40,7 +44,9 @@ Invariant Violation: "gap" is not a valid style property.
 
 Another solution I tried was to add a `justifyContent: 'space-between'`, this fix certainly fixes the issue, but when less elements were displayed in the bottom of the viewport, the spacing would be too far off.
 
-![grid-gap](/assets/images/blog/reactnative-spacebetween/grid-spaced-space-between.png){:class="img-blog-center"}
+<div class="img-blog-center">
+	<img src="/assets/images/blog/reactnative-spacebetween/grid-spaced-space-between.png" alt="grid-gap-2">
+</div>
 
 After another hour of trial and error, I was able to find another way. If you are using the `map` function to render your component, you can try the following code:
 
@@ -84,6 +90,8 @@ const childStyles = (index) => {
 
 The result may be the same, but it certainly fixed the issue. You can configure the grid-gap by changing the `spacing` variable. You can also configure the number of columns by changing the `numCol` variable.
 
-![grid-gap](/assets/images/blog/reactnative-spacebetween/grid-spaced.png){:class="img-blog-center"}
+<div class="img-blog-center">
+	<img src="/assets/images/blog/reactnative-spacebetween/grid-spaced.png" alt="grid-gap-3">
+</div>
 
 I hope this article will be of help to anyone who encounters a similar issue. :smile: :thumbsup:

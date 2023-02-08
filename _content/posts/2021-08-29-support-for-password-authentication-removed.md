@@ -20,7 +20,9 @@ remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
 
 ```
 
-![github-auth-error](/assets/images/blog/github-auth-error/use-personal-token.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/use-personal-token.png" alt="github-auth-error">
+</div>
 
 The error above has to do with a policy change in Github's security. The support for using regular username and password has been removed and instead been replaced with a personal access token. Click [here](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) for more information.
 
@@ -32,39 +34,55 @@ Follow these steps to generate a personal access token. Make sure to keep note o
 
 #### 1. On the Github dashboard, click on Settings.
 
-![settings](/assets/images/blog/github-auth-error/settings.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/settings.png" alt="settings">
+</div>
 
 #### 2. Click on Developer Settings
 
-![developer-settings](/assets/images/blog/github-auth-error/developer-settings.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/developer-settings.png" alt="developer-settings">
+</div>
 
 #### 3. Click on Personal access tokens
 
-![personal-access-tokens](/assets/images/blog/github-auth-error/personal-access-token.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/personal-access-token.png" alt="personal-access-tokens">
+</div>
 
 #### 4. Click on Generate new token
 
-![generate-new-token](/assets/images/blog/github-auth-error/generate-new-token.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/generate-new-token.png" alt="generate-new-token">
+</div>
 
 #### 5. Enter password
 
-![enter-password](/assets/images/blog/github-auth-error/enter-password.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/enter-password.png" alt="enter-password">
+</div>
 
 #### 6. Add a note for the token, configure expiry and the allowed permissions.
 
 In this example, we are leaving all the persmissions is checked, and with no expiry
 
-![token-configuration](/assets/images/blog/github-auth-error/token-configuration.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/token-configuration.png" alt="token-configuration">
+</div>
 
 #### 7. Click on Generate Token
 
-![generate-token-button](/assets/images/blog/github-auth-error/generate-token-button.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/generate-token-button.png" alt="generate-token-button">
+</div>
 
 #### 8. Copy the token
 
 Copy the token. Store it somewhere safe where only you can access it. You will need this personal token in the next step.
 
-![generate-token-button](/assets/images/blog/github-auth-error/copy-token.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/copy-token.png" alt="generate-token-button-2">
+</div>
 
 #### Using the Personal Token instead of password
 
@@ -72,15 +90,21 @@ If this is your **first time ever** to clone a respository in Github then follow
 
 #### 1. Re-clone the respository.
 
-![re-clone](/assets/images/blog/github-auth-error/re-clone.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/re-clone.png" alt="re-clone">
+</div>
 
 #### 2. Paste the personal access token in the password prompt
 
-![paste-personal-token](/assets/images/blog/github-auth-error/paste-personal-token.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/paste-personal-token.png" alt="paste-personal-token">
+</div>
 
 #### 3. Congratulations, you have successfully cloned the repository
 
-![clone-success](/assets/images/blog/github-auth-error/clone-success.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/clone-success.png" alt="clone-success">
+</div>
 
 #### Replacing the Credentials in Keychain access
 
@@ -88,34 +112,48 @@ If you've **cloned a few repositories** before in Github, it's likely that your 
 
 #### 1. Open Keychain access.
 
-![keychain-access](/assets/images/blog/github-auth-error/spotlight-keychain-access.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/spotlight-keychain-access.png" alt="keychain-access">
+</div>
 
 #### 2. On Keychain Access, search `git`
 
-![search-git](/assets/images/blog/github-auth-error/search-git.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/search-git.png" alt="search-git">
+</div>
 
 #### 3. Click on `github.com`
 
-![click-github](/assets/images/blog/github-auth-error/click-github.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/click-github.png" alt="click-github">
+</div>
 
 #### 4. Tick the checkbox `show password`.
 
-![keychain-access-password](/assets/images/blog/github-auth-error/keychain-access-password.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/keychain-access-password.png" alt="keychain-access-password">
+</div>
 
 #### 5. Enter system password, then click on Always allow
 
-![always-allow](/assets/images/blog/github-auth-error/always-allow.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/always-allow.png" alt="always-allow">
+</div>
 
 #### 6. Paste the Token into the password field
 
 Copy the token from the previous guide on generating a personal access token. Then paste it in the input as seen below:
 
-![paste-token](/assets/images/blog/github-auth-error/paste-token.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/paste-token.png" alt="paste-token">
+</div>
 
 #### 7. Congratulations, you have successfully cloned the repository
 
 Re-clone the repository
 
-![clone-succcess-keychain-access](/assets/images/blog/github-auth-error/clone-success-keychain-access.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/github-auth-error/clone-success-keychain-access.png" alt="clone-succcess-keychain-access">
+</div>
 
 I hope this article will be of help to anyone who encounters a similar issue. :smile: :thumbsup:

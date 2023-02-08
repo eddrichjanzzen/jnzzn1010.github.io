@@ -17,7 +17,9 @@ At the time of this writing, I have went along to upgrade my machine by replacin
 
 #### Bootcamping this Device
 
-![Bootcamp](/assets/images/blog/bootcamp.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/python-logo.png" alt="Bootcamp">
+</div>
 
 One of the problems I've encountered when trying to Bootcamp this device was a black screen after the download when booting the system after following along with Bootcamp Assistant.
 

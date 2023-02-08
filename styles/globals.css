@@ -3,3 +3,28 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.width-100 {
+  width: 100px;
+}
+
+.width-200 {
+  width: 200px;
+}
+
+.img-blog {
+  width: 100%;
+}
+
+.img-blog-center {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-blog-right {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  width: 30%;
+}

@@ -10,13 +10,21 @@ tags:
 description: "An article shows a possible reason why the index.html page in jekyll isn't rendered"
 ---
 
-[Jekyll](https://jekyllrb.com/) is an amazing tool for building static websites. What I love about Jekyll is that you can easily deploy a simple website without the need for a database. ![jekyll](/assets/images/blog/jekyll.png){:class="img-blog-right"} You can also host it for free using [Github Pages](https://pages.github.com/) which makes process way more convenient.
+[Jekyll](https://jekyllrb.com/) is an amazing tool for building static websites. What I love about Jekyll is that you can easily deploy a simple website without the need for a database.
+
+<div div class="img-blog-right">
+  <img src="/assets/images/blog/jekyll.png" alt="Index">
+</div>
+
+You can also host it for free using [Github Pages](https://pages.github.com/) which makes process way more convenient.
 
 Recently I've found the time to restructure my personal webpage built with Jekyll.
 
 While restructuring the `pages` directory, I ran into an issue where the page would return `Index of /posts/` instead of the page specified as the `index`.
 
-![Index](/assets/images/blog/index-of-posts.png){:class="img-blog"}
+<div div class="img-blog">
+  <img src="/assets/images/blog/index-of-posts.png" alt="Index">
+</div>
 
 After an hour or two of debugging, I found that the issue had to do with how Jekyll reads [front matter](https://jekyllrb.com/docs/front-matter/).
 
