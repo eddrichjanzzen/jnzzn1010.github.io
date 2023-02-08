@@ -37,7 +37,7 @@ const Footer = () => {
                 href="https://github.com/eddrichjanzzen"
                 target="_blank"
               >
-                Eddrich Janzzen Ang{' '}
+                Janzzen Ang{' '}
               </CustomLink>
               powered by <CustomLink href="#">Vercel</CustomLink>
             </Text>

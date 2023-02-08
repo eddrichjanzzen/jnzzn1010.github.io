@@ -19,8 +19,8 @@ const Home = () => {
             <PolyTree />
           </ThreeCanvas>
           <Text>
-            I've had the opportunity to work with a variety of tech platforms,
-            💻 from web apps to databases and cloud providers. I've used
+            I've had the opportunity to work with a variety of tech platforms 💻
+            from web apps to databases and cloud providers. I've used
             development frameworks such as{' '}
             <CustomLink href="https://www.djangoproject.com/">
               Django
