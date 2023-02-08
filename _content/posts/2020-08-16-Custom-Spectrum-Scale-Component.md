@@ -115,7 +115,10 @@ Example 2:
 ```
 
 Output
-![Sentiment](/assets/images/blog/sentiment-analysis.png){:class="img-blog"}
+
+<div class="img-blog">
+	<img src="/assets/images/blog/sentiment-analysis.png)" alt="Sentiment">
+</div>
 
 #### Wrapping up
 
