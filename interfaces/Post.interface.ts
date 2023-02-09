@@ -1,4 +1,4 @@
-type Post = {
+export default interface Post {
   title: string;
   layout: string;
   author: string;
@@ -8,6 +8,4 @@ type Post = {
   description: string;
   content: string;
   slug: string;
-};
-
-export default Post;
+}
