@@ -19,6 +19,7 @@ const ThreeCanvas = ({ children }: IThreeCanvasProps) => {
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.5} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
+        {children}
         <Suspense
           fallback={
             <Spinner
@@ -29,9 +30,7 @@ const ThreeCanvas = ({ children }: IThreeCanvasProps) => {
               size="xl"
             />
           }
-        >
-          {children}
-        </Suspense>
+        />
       </Canvas>
     </Wrapper>
   );
