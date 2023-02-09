@@ -31,6 +31,7 @@ const theme = extendTheme(
         bg: 'grey.100',
         color: 'inherit',
         overflow: 'auto',
+        fontSize: '0.75em',
 
         _dark: {
           bg: 'inherit',
