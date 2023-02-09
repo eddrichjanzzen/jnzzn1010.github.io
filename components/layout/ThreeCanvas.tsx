@@ -2,6 +2,7 @@ import { OrbitControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import styled from '@emotion/styled';
 import { ReactNode, Suspense } from 'react';
+import { Spinner } from '@chakra-ui/react';
 
 interface IThreeCanvasProps {
   children: ReactNode;
@@ -18,8 +19,19 @@ const ThreeCanvas = ({ children }: IThreeCanvasProps) => {
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.5} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
-        {children}
-        <Suspense fallback={null} />
+        <Suspense
+          fallback={
+            <Spinner
+              thickness="4px"
+              speed="0.65s"
+              emptyColor="gray.200"
+              color="teal.500"
+              size="xl"
+            />
+          }
+        >
+          {children}
+        </Suspense>
       </Canvas>
     </Wrapper>
   );
