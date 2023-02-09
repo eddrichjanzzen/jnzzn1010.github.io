@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react';
 import Post from '../../interfaces/Post.interface';
 import CustomLink from '../common/CustomLink';
-import CustomTag from '../common/Tag';
+import Tag from '../common/Tag';
 import dayjs from 'dayjs';
 
 type PostItemProps = {
@@ -37,7 +37,7 @@ const PostItem = ({ post }: PostItemProps) => {
                 <Box>
                   {post.tags.map((tag) => {
                     return (
-                      <CustomTag
+                      <Tag
                         title={tag}
                         key={tag}
                         ml={1}

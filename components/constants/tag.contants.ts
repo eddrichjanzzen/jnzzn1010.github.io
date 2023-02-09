@@ -1,30 +1,30 @@
 const TagItems = [
   {
-    href: '/angular',
+    href: 'angular',
     title: 'angular',
   },
   {
-    href: '/aws',
+    href: 'aws',
     title: 'aws',
   },
   {
-    href: '/python',
+    href: 'python',
     title: 'python',
   },
   {
-    href: '/django',
+    href: 'django',
     title: 'django',
   },
   {
-    href: '/react',
+    href: 'react',
     title: 'react',
   },
   {
-    href: '/jekyll',
+    href: 'jekyll',
     title: 'jekyll',
   },
   {
-    href: '/tech',
+    href: 'tech',
     title: 'tech',
   },
   {
