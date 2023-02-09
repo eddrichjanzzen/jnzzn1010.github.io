@@ -30,8 +30,6 @@ Recently, I've been working on a feature that diplays a list of elements into th
 	<img src="/assets/images/blog/reactnative-spacebetween/grid-spaced.png" alt="grid-gap">
 </div>
 
-![grid-gap](/assets/images/blog/reactnative-spacebetween/grid-spaced.png){:class="img-blog-center"}
-
 However as I was implementing tests, I discovered that React Native doesn't support the usage of `grid-gap`.
 
 The test would fail with the following error:
