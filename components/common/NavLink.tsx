@@ -1,5 +1,6 @@
 import { Text, Link } from '@chakra-ui/react';
 import { ReactNode } from 'react';
+import CustomLink from './CustomLink';
 
 interface INavLinkProps {
   children: ReactNode;
@@ -13,7 +14,7 @@ const NavLink = ({
   fontSize = '1.1rem',
 }: INavLinkProps) => (
   <Text size="md">
-    <Link
+    <CustomLink
       px={2.5}
       py={2}
       rounded={'md'}
@@ -22,7 +23,7 @@ const NavLink = ({
       fontSize={fontSize}
     >
       {children}
-    </Link>
+    </CustomLink>
   </Text>
 );
 
