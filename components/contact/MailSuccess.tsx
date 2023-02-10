@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
-import Image from 'next/image';
 import ButtonLink from '../../components/common/ButtonLink';
+import CustomImage from '../common/CustomImage';
 
 const MailSuccess = () => {
   return (
@@ -11,9 +11,9 @@ const MailSuccess = () => {
       alignItems="center"
     >
       <Box position="relative">
-        <Image
-          width="200"
-          height="200"
+        <CustomImage
+          width={200}
+          height={200}
           src="/assets/images/mail.svg"
           alt="mail"
         />

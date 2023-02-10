@@ -7,12 +7,10 @@ import {
   ButtonGroup,
   CardFooter,
   Divider,
-  Box,
-  Image,
 } from '@chakra-ui/react';
 import Project from '../../interfaces/Project.interface';
 import ButtonLink from '../common/ButtonLink';
-// import Image from 'next/image';
+import CustomImage from '../common/CustomImage';
 
 export interface IProjectCardProps {
   project: Project;
@@ -22,13 +20,7 @@ const ProjectCard = ({ project }: IProjectCardProps) => {
   return (
     <Card maxW="lg" variant="outline" minH="xl">
       <CardBody>
-        <Box style={{ position: 'relative' }}>
-          <Image
-            src={project.image}
-            style={{ objectFit: 'contain' }}
-            alt="project-image"
-          />
-        </Box>
+        <CustomImage src={project.image} fill alt="project-image" />
         <Stack mt="6" spacing="3">
           <Heading size="md" color="teal.500">
             {project.title}
