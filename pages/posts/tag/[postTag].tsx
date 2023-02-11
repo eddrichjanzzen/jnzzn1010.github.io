@@ -1,4 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react';
+import { IPostPageProps } from '..';
 import ButtonLink from '../../../components/common/ButtonLink';
 import PostList from '../../../components/modules/post/PostList';
 import { getAllPosts, getAllPostsByTag } from '../../../lib/posts.api';
