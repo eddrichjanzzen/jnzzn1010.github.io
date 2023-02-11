@@ -28,11 +28,11 @@ const TagItems = [
     title: 'tech',
   },
   {
-    href: '/terraform',
+    href: 'terraform',
     title: 'terraform',
   },
   {
-    href: '/dotnet',
+    href: 'dotnet',
     title: 'dotnet',
   },
 ];
