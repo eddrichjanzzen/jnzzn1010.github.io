@@ -13,6 +13,7 @@ const Navbar = () => {
                 href={navItem.href}
                 key={navItem.title}
                 fontSize={'1.3rem'}
+                target={navItem?.target || ''}
               >
                 {navItem.title}
               </NavLink>

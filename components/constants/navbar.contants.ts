@@ -14,6 +14,7 @@ const NavItems = [
   {
     href: 'https://github.com/eddrichjanzzen',
     title: 'Github',
+    target: '_blank',
   },
   {
     href: '/contact',
