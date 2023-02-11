@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
@@ -30,6 +31,7 @@
     "framer-motion": "^8.1.1",
     "gray-matter": "^4.0.3",
     "next": "13.0.6",
+    "next-sitemap": "^3.1.52",
     "prism": "^4.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
