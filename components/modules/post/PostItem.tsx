@@ -7,9 +7,9 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import Post from '../../interfaces/Post.interface';
-import CustomLink from '../common/CustomLink';
-import Tag from '../common/Tag';
+import Post from '../../../interfaces/Post.interface';
+import CustomLink from '../../common/CustomLink';
+import Tag from '../../common/Tag';
 import dayjs from 'dayjs';
 
 type PostItemProps = {

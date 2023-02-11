@@ -1,6 +1,6 @@
 import { Box, Heading } from '@chakra-ui/react';
-import Tag from '../common/Tag';
-import TagItems from '../constants/tag.contants';
+import Tag from '../../common/Tag';
+import TagItems from '../../constants/tag.contants';
 
 const TagGroup = () => {
   return (

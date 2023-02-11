@@ -10,7 +10,7 @@ import {
   GridItem,
 } from '@chakra-ui/react';
 import { useForm } from '@formspree/react';
-import MailSuccess from '../../components/contact/MailSuccess';
+import MailSuccess from '../../components/modules/contact/MailSuccess';
 
 const ContactPage = () => {
   const [state, handleSubmit] = useForm('myrezndx');

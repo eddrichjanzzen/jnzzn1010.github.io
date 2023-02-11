@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react';
-import Post from '../../interfaces/Post.interface';
+import Post from '../../../interfaces/Post.interface';
 import PostItem from './PostItem';
 
 export interface IPostPageProps {

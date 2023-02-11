@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 import dayjs from 'dayjs';
-import PostBody from '../../components/post/PostBody';
+import PostBody from '../../components/modules/post/PostBody';
 
 import Post from '../../interfaces/Post.interface';
 import markdownToHtml from '../../lib/markdownToHtml';

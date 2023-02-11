@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 import CustomLink from '../../components/common/CustomLink';
-import PostList from '../../components/post/PostList';
-import TagGroup from '../../components/tag/TagGroup';
+import PostList from '../../components/modules/post/PostList';
+import TagGroup from '../../components/modules/tag/TagGroup';
 import Post from '../../interfaces/Post.interface';
 import { getAllPosts } from '../../lib/posts.api';
 

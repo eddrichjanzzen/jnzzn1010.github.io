@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react';
-import Markdown from '../common/Markdown';
+import Markdown from '../../common/Markdown';
 
 export interface IPostBodyProps {
   content: string;

@@ -5,7 +5,7 @@ import {
   Heading,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import ProjectCard from '../../components/project/ProjectCard';
+import ProjectCard from '../../components/modules/project/ProjectCard';
 import Project from '../../interfaces/Project.interface';
 import { getAllProjects } from '../../lib/projects.api';
 

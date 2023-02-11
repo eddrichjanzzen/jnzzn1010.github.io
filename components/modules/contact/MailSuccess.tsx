@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
-import ButtonLink from '../../components/common/ButtonLink';
-import CustomImage from '../common/CustomImage';
+import ButtonLink from '../../common/ButtonLink';
+import CustomImage from '../../common/CustomImage';
 
 const MailSuccess = () => {
   return (

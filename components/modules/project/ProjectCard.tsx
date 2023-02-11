@@ -8,9 +8,9 @@ import {
   CardFooter,
   Divider,
 } from '@chakra-ui/react';
-import Project from '../../interfaces/Project.interface';
-import ButtonLink from '../common/ButtonLink';
-import CustomImage from '../common/CustomImage';
+import Project from '../../../interfaces/Project.interface';
+import ButtonLink from '../../common/ButtonLink';
+import CustomImage from '../../common/CustomImage';
 
 export interface IProjectCardProps {
   project: Project;
