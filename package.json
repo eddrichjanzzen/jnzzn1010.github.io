@@ -30,7 +30,7 @@
     "eslint-config-next": "13.0.6",
     "framer-motion": "^8.1.1",
     "gray-matter": "^4.0.3",
-    "next": "12.3.2",
+    "next": "13.0.6",
     "next-seo": "^5.15.0",
     "next-sitemap": "^3.1.52",
     "prism": "^4.1.2",
