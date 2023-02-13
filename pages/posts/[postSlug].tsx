@@ -14,7 +14,7 @@ export interface IPostDetailPageParams {
 
 const PostDetailPage = ({ post }: IPostDetailPageParams) => {
   const formattedDate = dayjs(post.date).format('MMMM DD, YYYY');
-  const blogUrl = `${NEXT_SEO_DEFAULT.openGraph.url}/${post.slug}`;
+  const blogUrl = `${NEXT_SEO_DEFAULT.openGraph.url}/posts/${post.slug}`;
   return (
     <Box>
       <NextSeo
