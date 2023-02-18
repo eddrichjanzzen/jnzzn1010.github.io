@@ -1,4 +1,5 @@
 import { Avatar, Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
+import NextImage, { ImageProps } from 'next/image';
 import CustomLink from '../common/CustomLink';
 import NavLink from '../common/NavLink';
 import NavItems from '../constants/navbar.contants';
@@ -32,7 +33,17 @@ const Footer = () => {
             ))}
           </Flex>
           <Flex justifyContent={'center'} py={2}>
-            <Avatar name="Janzzen" src="/assets/images/me.jpg" />
+            <NextImage
+              src="/assets/images/me.jpg"
+              width={45}
+              height={45}
+              alt={'janzzen'}
+              style={{
+                borderRadius: '50%',
+                height: '45px',
+                objectFit: 'cover',
+              }}
+            />
           </Flex>
           <Flex justifyContent={'center'}>
             <Text fontSize={'sm'}>
