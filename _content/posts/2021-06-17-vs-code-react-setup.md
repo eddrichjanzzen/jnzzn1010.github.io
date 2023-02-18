@@ -30,19 +30,27 @@ The good news is, you can enable Emmet for React using following steps:
 
 #### 1. Go to the settings page in VS Code
 
-![settings](/assets/images/blog/vs-code-react/settings-page.png){:class="img-blog"}
+<div style="width: 100%;">
+	<img src="/assets/images/blog/vs-code-react/settings-page.png" alt="settings">
+</div>
 
 #### 2. Go to the `Workspace Settings` tab
 
-![settings](/assets/images/blog/vs-code-react/workspace-settings.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/vs-code-react/workspace-settings.png" alt="settings">
+</div>
 
 #### 3. Under `Extensions` look for `Emmet`
 
-![settings](/assets/images/blog/vs-code-react/emmet-boxed.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/vs-code-react/emmet-boxed.png" alt="settings">
+</div>
 
 #### 4. Click on `"Edit in settings.json"`
 
-![settings](/assets/images/blog/vs-code-react/settings.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/vs-code-react/settings.png" alt="settings">
+</div>
 
 #### 5. Add the following lines of code to `"settings.json"`
 
@@ -64,18 +72,26 @@ To install Prettier you can follow these steps:
 
 #### 1. In the side panel click on the Extensions icon
 
-![settings](/assets/images/blog/vs-code-react/extensions.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/vs-code-react/extensions.png" alt="settings">
+</div>
 
 #### 2. In the search bar, search for `Prettier`
 
-![settings](/assets/images/blog/vs-code-react/search-prettier.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/vs-code-react/search-prettier.png" alt="settings">
+</div>
 
 #### 3. Install `Pretter`
 
-![settings](/assets/images/blog/vs-code-react/install-prettier.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/vs-code-react/install-prettier.png" alt="settings">
+</div>
 
 #### 4. To verify prettier is installed, you should see the following on the bottom of the code editor
 
-![settings](/assets/images/blog/vs-code-react/prettier-verify.png){:class="img-blog"}
+<div class="img-blog">
+	<img src="/assets/images/blog/vs-code-react/prettier-verify.png" alt="settings">
+</div>
 
 Success! Prettier has now been installed!! :raised_hands: :clap:
