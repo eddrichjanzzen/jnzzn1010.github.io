@@ -8,6 +8,10 @@ const Header = () => {
       <Head>
         <title>Janzzen | Personal Blog</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="_3N9zk0ZR0qIXiEpE0GdITfAoNGYR7gMKyaImA4sP5s"
+        />
       </Head>
       <DefaultSeo {...NEXT_SEO_DEFAULT} />
     </>
