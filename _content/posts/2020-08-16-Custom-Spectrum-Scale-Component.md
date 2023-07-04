@@ -89,7 +89,7 @@ Example 1:
 ```
 
 Output:
-![Gender](/assets/images/blog/gender-bias.png){:class="img-blog"}
+![Gender](/assets/images/blog/spectrum-scale/gender-bias.png)
 
 Example 2:
 
@@ -117,7 +117,7 @@ Example 2:
 Output
 
 <div class="img-blog">
-	<img src="/assets/images/blog/sentiment-analysis.png)" alt="Sentiment">
+	<img src="/assets/images/blog/spectrum-scale/sentiment-analysis.png" alt="sentiment-analysis">
 </div>
 
 #### Wrapping up
