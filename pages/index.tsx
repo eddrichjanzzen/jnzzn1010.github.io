@@ -39,12 +39,20 @@ const Home = () => {
             <CustomLink href="https://reactjs.org/">React</CustomLink>,{' '}
             <CustomLink href="https://vuejs.org/">Vue.js</CustomLink>, and{' '}
             <CustomLink href="https://nextjs.org/">Nextjs</CustomLink> to create
-            user-friendly interfaces.
+            user-friendly interfaces 👤.
           </Text>
           <Text>
-            One of my favorite parts of being a software engineer is DevOps. 👨‍💻
-            I get a thrill out of building 👷 pipelines and automating tasks to
-            make development smoother and faster.
+            Beyond my professional endeavors, I thrive on continuous learning
+            and collaboration. In my free time, I enjoy exploring new languages
+            and frameworks that challenge me creatively, and contributing to
+            open-source communities 👨‍💻. This pursuit of knowledge keeps me
+            motivated and allows me to bring fresh ideas into my work 💡.
+          </Text>
+          <Text>
+            I am always excited to connect with fellow developers, collaborate
+            on exicting projects, and grow as a software engineer 🤗. Feel free
+            to reach me in the contact form on this website. Lets build
+            something awesome together! 🙌
           </Text>
         </Stack>
       </Box>
