@@ -14,14 +14,14 @@ const Home = () => {
             creative with code and is always on the lookout for the latest and
             greatest technologies. When I'm not staring at a computer screen,
             you can find me outside soaking up nature 🌲. It's the perfect
-            escape from the tech world and helps me recharge.
+            escape from the tech world and helps me recharge 🔋.
           </Text>
           <ThreeCanvas>
             <PolyTree />
           </ThreeCanvas>
           <Text>
-            I've had the opportunity to work with a variety of tech platforms 💻
-            from web apps to databases and cloud providers. I've used
+            I've had the opportunity to work with a variety of tech platforms
+            🐱‍💻 from web apps to databases and cloud providers ☁️. I've used
             development frameworks such as{' '}
             <CustomLink href="https://www.djangoproject.com/">
               Django
@@ -42,17 +42,10 @@ const Home = () => {
             user-friendly interfaces 👤.
           </Text>
           <Text>
-            Beyond my professional endeavors, I thrive on continuous learning
-            and collaboration. In my free time, I enjoy exploring new languages
-            and frameworks that challenge me creatively, and contributing to
-            open-source communities 👨‍💻. This pursuit of knowledge keeps me
-            motivated and allows me to bring fresh ideas into my work 💡.
-          </Text>
-          <Text>
-            I am always excited to connect with fellow developers, collaborate
-            on exicting projects, and grow as a software engineer 🤗. Feel free
-            to reach me in the contact form on this website. Lets build
-            something awesome together! 🙌
+            I am always excited to connect with fellow developers 👨‍💻 and
+            collaborate on exciting projects. Feel free to reach me in the
+            contact form on this website 🤗. Lets build 👷 something awesome
+            together! 🚀
           </Text>
         </Stack>
       </Box>
