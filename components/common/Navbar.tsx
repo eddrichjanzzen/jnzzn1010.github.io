@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav>
       <Box 
-        h={8} 
+        h="48px" 
         display="flex" 
         flexDir="column" 
         justifyContent="center" 
