@@ -5,7 +5,14 @@ import NavLink from './NavLink';
 const Navbar = () => {
   return (
     <nav>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box 
+        h={8} 
+        display="flex" 
+        flexDir="column" 
+        justifyContent="center" 
+        bg={useColorModeValue('gray.100', 'gray.900')} 
+        px={4}
+      >
         <Flex alignItems={'center'} justifyContent={'right'}>
           <Box mx={{ base: '5%', md: '18%', lg: '22%' }}>
             <Flex alignItems={'center'}>
